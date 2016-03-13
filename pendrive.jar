@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 
 public class Pendrive {
 	
@@ -14,18 +14,17 @@ public class Pendrive {
 		
 	}
 	
-	public double disminuir(double valor)
+	public void setDisminuir(double valor)
 	{
 		totalOcupado= totalOcupado-valor;
-		return totalOcupado;
 	}
 	
-	public void archivoMenos()
+	public void setArchivoMenos()
 	{
 		cantidadArchivos=cantidadArchivos-1;
 	}
 	
-	public void virus()
+	public void setVirus()
 	{
 		totalOcupado=totalOcupado*0.1;
 	}
@@ -49,8 +48,13 @@ public class Pendrive {
 	public static void main(String[] args) {
 		
 		Pendrive p1 = new Pendrive("kingston",2024,10);
-		p1.disminuir(100);
-		
+		p1.setDisminuir(1000);
+		System.out.println(p1.getTotalOcupado());
+		p1.setArchivoMenos();
+		System.out.println(p1.getTotalArchivos());
+		System.out.println(p1.getMarca());
+		p1.setVirus();
+		System.out.println(p1.getTotalOcupado());
 		
 
 	}
