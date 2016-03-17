@@ -36,6 +36,7 @@ public class Aguas {
 	
 	public static void main(String[] args) {
 		
+		
 		Aguas a1 = new Aguas("El wea", "Que te importa", 100000, 120000);
 		
 		System.out.println(a1.getConsumoEnDinero());
